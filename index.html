@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/ft_2_logo.png">
+
+        <title>Flatiles</title>
+    </head>
+
+    <body>  
+        <div class="container">
+            <div class="header">
+                <div class="header__left">
+                    <img src="img/ft_2_logo.png" alt="header logo" class="header__logo">
+                    <nav class="header__nav">
+                        <a href="#" class="header__link">Hombres</a>
+                        <a href="#" class="header__link">Mujeres</a>
+                        <a href="#" class="header__link">Tazas/Plumas</a>
+                    </nav>
+                </div> 
+
+                <div class="header__right">
+                    <img src="img/carrito.png" alt="Carrito" class="header__right-cart">
+                    <span class="header__right-notification">
+                        3
+                    </span>
+                </div>
+            </div>
+
+            <main class="home-content">
+     <!--****************************************************************************************************-->           
+                <div class="right-content">
+                    <img src="/img/bag.png" alt="club de compras" class="right-content__club">
+                    <form action="#" class="right-content__form">
+                       <div class="select-box">
+                           <label for="select" class="select__label">Selecciona tu pais</label>
+                           <div class="select" id="select">
+                                <div class="select__content">
+                                    <img src="/img/mexico-flag.png" alt="mexico flag" class="option__content--flag">
+                                    <h1 class="country">Mexico</h1>
+                                </div>
+                                <img src="/img/down_arrow.png" alt="" class="select__icon">
+                           </div>
+
+                           <!--******opciones*************-->
+
+                           <div class="select-box__options" id="options">
+                               <a href="#" class="option">
+
+                                   <div class="option__content">
+                                       <img src="/img/mexico-flag.png" alt="mexico flag" class="option__content--flag">
+                                       <div class="option__content--text">
+                                            <h2 class="text">
+                                            Mexico
+                                            </h2>
+                                        </div>
+                                    </div>
+                               </a>
+
+                                <a href="#" class="option">
+
+                                   <div class="option__content">
+                                       <img src="/img/mexico-flag.png" alt="mexico flag" class="option__content--flag">
+                                       <div class="option__content--text">
+                                            <h2 class="text">
+                                            Estados Unidos
+                                            </h2>
+                                        </div>
+                                    </div>
+                               </a>
+                           </div>
+                       </div>  
+                    
+
+                       <div class="select-box">
+                        <label for="select" class="select__label">Distribuidor</label>
+                        <div class="select" id="select">
+                             <div class="select__content">
+                                 <img src="/img/distribuitor.png" alt="distribuidor" class="option__content--flag">
+                                 <h1 class="country">Distribuidor 1</h1>
+                             </div>
+                             <img src="/img/down_arrow.png" alt="" class="select__icon">
+                        </div>
+                    </div>  
+
+                       <input type="hidden" name="country" value="" id="input-select" class="country">
+                    </form>  
+                    
+                    <button class="btn">continuar</button>
+                </div>
+<!--****************************************************************************************************-->
+                <div class="left-content">
+                    <img src="/img/seller.jpg" alt="vendedor" class="background">
+                    
+                </div>
+            </main>
+
+            <footer class="footer">
+               <ul class="nav">
+                   <li class="nav__item"><a href="#" class="nav__link">Terminos y condiciones</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">Aviso de Privacidad</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">Preguntas Frecuentes</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">Email y telefono de Contacto</a></li>
+                   <p class="copyright">
+                    Copyright &copy;2020 014Digital. All rights reserved. 
+                    </p>
+               </ul> 
+            </footer>
+        </div>
+
+        <script src="/js/select.js"></script>
+    </body>
+
+</html>
+
+

@@ -1,0 +1,86 @@
+.header{
+    background-color: $color-primary;
+    grid-column: 1 /-1;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    &__left{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
+
+    &__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+        &-cart{
+ 
+            position: relative;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 1.6rem;
+        }
+        &-notification{
+            font-size: 1rem;
+            font-family: $font-primary;
+            height: 1.75rem;
+            width: 1.75rem;
+            border-radius: 50%;
+            background-color: $color-primary-dark;
+            color: #fff;
+            position: absolute;
+            top: 3.5rem;
+            right: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    
+    &__logo{
+        align-self: center;
+        padding: 1.2rem;
+        width: 15rem;
+        height: 6.2rem;
+    }
+
+    &__nav{    
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__link:link,
+    &__link:visited{
+        padding-top: 2.2rem;
+        padding-bottom: 2.3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-font;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        transition: all .3s;
+               
+    }
+    &__link:not(:last-child){
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    &__link:hover,
+    &__link:active{
+        background-color: $color-primary-dark;
+        color: $color-white;
+        transform: translateY(-3px);
+    }
+
+}

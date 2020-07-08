@@ -1,0 +1,45 @@
+//**********************variables*********************//
+
+$color-primary: #ece6ff;
+$color-primary-light: #f4f4f7;
+$color-primary-dark: #9b87db;
+
+$color-white: white;
+
+$color-Grey-dark-1: #333;
+
+
+$color-font: black;
+
+$font-primary: 'Roboto', sans-serif;
+
+
+//************Norm****************************//
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10 px/16px = 62.5% -> 1rem = 10px
+}
+
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.btn{
+    
+}
